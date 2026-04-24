@@ -5,6 +5,60 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Invoice App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              purple: {
+                primary: '#7C5DFA',
+                light: '#9277FF',
+              },
+              navy: {
+                dark: '#0C0E16',
+                mid: '#141625',
+                card: '#1E2139',
+                sidebar: '#252945',
+                muted: '#373B53',
+              },
+              slate: {
+                text: '#888EB0',
+                light: '#DFE3FA',
+                form: '#7E88C3',
+              },
+            },
+            fontFamily: {
+              spartan: ["'League Spartan'", 'sans-serif'],
+            },
+          }
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { font-family: 'League Spartan', sans-serif; overflow-x: hidden; }
+      ::-webkit-scrollbar { width: 6px; }
+      ::-webkit-scrollbar-track { background: transparent; }
+      ::-webkit-scrollbar-thumb { background: #DFE3FA; border-radius: 3px; }
+      input[type="date"]::-webkit-calendar-picker-indicator { cursor: pointer; }
+      .dark input[type="date"]::-webkit-calendar-picker-indicator { filter: invert(1); }
+      input[type="number"]::-webkit-inner-spin-button,
+      input[type="number"]::-webkit-outer-spin-button { -webkit-appearance: none; }
+      .slide-in { animation: slideIn 0.3s ease; }
+      @keyframes slideIn {
+        from { transform: translateX(-100%); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
+      }
+      .fade-in { animation: fadeIn 0.2s ease; }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-8px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
