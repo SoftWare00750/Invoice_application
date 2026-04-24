@@ -1,7 +1,7 @@
 import { STATUS_STYLES, STATUS_STYLES_DARK } from "../constants";
 
 export default function StatusBadge({ status, dark }) {
-  const styles = (dark ? STATUS_STYLES_DARK : STATUS_STYLES)[status] || STATUS_STYLES.draft;
+  const styles = dark ? STATUS_STYLES_DARK[status] : STATUS_STYLES[status];
   return (
     <span
       style={{
