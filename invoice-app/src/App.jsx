@@ -118,7 +118,7 @@ export default function App() {
             className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-sm border-2"
             style={{ background: "linear-gradient(135deg, #7C5DFA, #9277FF)", borderColor: "#7C5DFA" }}
           >
-            U
+            
           </div>
         </div>
       </nav>
@@ -152,7 +152,7 @@ export default function App() {
               className="w-8 h-8 rounded-full flex items-center justify-center text-white font-bold text-xs border-2"
               style={{ background: "linear-gradient(135deg, #7C5DFA, #9277FF)", borderColor: "#7C5DFA" }}
             >
-              U
+              
             </div>
           </div>
         </div>
