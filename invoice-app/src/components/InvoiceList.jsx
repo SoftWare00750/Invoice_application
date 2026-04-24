@@ -1,7 +1,7 @@
 import { useState } from "react";
 import StatusBadge from "./StatusBadge";
 import { formatDate, addDays, calcTotal, PAYMENT_TERMS } from "../utils";
-import { EmptyIllustration } from "/Icons";
+import { EmptyIllustration } from "./Icons";
 
 
 export default function InvoiceList({ invoices, filter, setFilter, onNew, onView, dark }) {
