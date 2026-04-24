@@ -51,4 +51,4 @@ npm run build
 npm run preview
 ```
 
-The app will be available at `http://localhost:5173`.
+The app will be available at `https://invoice-application-olive.vercel.app/`.
