@@ -1,20 +1,12 @@
 import { useState, useEffect } from "react";
 import { lightTheme, darkTheme, SAMPLE_INVOICES } from "./constants";
 import { generateId, addDays, PAYMENT_TERMS } from "./utils";
+import { Logo } from "./components/Icons";
 import InvoiceList from "./components/InvoiceList";
 import InvoiceDetail from "./components/InvoiceDetail";
 import InvoiceForm from "./components/InvoiceForm";
 import DeleteModal from "./components/DeleteModal";
 
-function Logo() {
-  return (
-    <svg width="28" height="28" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect width="40" height="40" rx="12" fill="#7C5DFA"/>
-      <path d="M20 7L27 20L20 33L13 20L20 7Z" fill="white" opacity="0.9"/>
-      <path d="M20 33L27 20L20 26.5L13 20L20 33Z" fill="white" opacity="0.5"/>
-    </svg>
-  );
-}
 
 function MoonIcon({ dark }) {
   return dark ? (

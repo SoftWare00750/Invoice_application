@@ -1,24 +1,8 @@
 import { useState } from "react";
 import StatusBadge from "./StatusBadge";
 import { formatDate, addDays, calcTotal, PAYMENT_TERMS } from "../utils";
+import { empty } from "./components/Icons";
 
-function EmptyIllustration() {
-  return (
-    <svg width="200" height="160" viewBox="0 0 242 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <ellipse cx="121" cy="175" rx="80" ry="12" fill="#DFE3FA" opacity="0.3"/>
-      <rect x="60" y="60" width="122" height="100" rx="8" fill="#DFE3FA" opacity="0.4"/>
-      <rect x="72" y="48" width="98" height="80" rx="8" fill="#DFE3FA" opacity="0.6"/>
-      <rect x="84" y="36" width="74" height="60" rx="8" fill="#7C5DFA" opacity="0.15"/>
-      <rect x="92" y="44" width="58" height="6" rx="3" fill="#7C5DFA" opacity="0.4"/>
-      <rect x="92" y="56" width="40" height="4" rx="2" fill="#DFE3FA"/>
-      <rect x="92" y="66" width="50" height="4" rx="2" fill="#DFE3FA"/>
-      <circle cx="175" cy="55" r="20" fill="#7C5DFA" opacity="0.15"/>
-      <path d="M175 47v16M167 55h16" stroke="#7C5DFA" strokeWidth="2.5" strokeLinecap="round"/>
-      <circle cx="60" cy="120" r="12" fill="#33D69F" opacity="0.15"/>
-      <path d="M55 120l3 3 7-7" stroke="#33D69F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-    </svg>
-  );
-}
 
 export default function InvoiceList({ invoices, filter, setFilter, onNew, onView, dark }) {
   const [filterOpen, setFilterOpen] = useState(false);
